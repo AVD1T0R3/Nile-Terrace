@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   /* Fixed background image */
-  background-image: url('../Images/Wood_bg.jpg'); /* Replace with your image URL */
+  background-image: url('../Images/BG/Wood_bg.jpg'); /* Replace with your image URL */
   background-size: cover; /* Covers entire viewport */
   background-position: center; /* Centers the image */
   background-attachment: fixed; /* Image stays fixed during scrolling */
