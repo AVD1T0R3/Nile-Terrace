@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-     <header class="navbar sticky top-0 z-50 bg-neutral">
+    <header class="navbar sticky top-0 z-50 bg-neutral">
         <div class="navbar bg-header-transparent">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -59,6 +61,50 @@
         </div>
 
     </header>
-    
+    <main>
+        <form action="/submit" method="POST">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="label">
+                        <span class="label-text">First Name</span>
+                    </label>
+                    <input type="text" placeholder="First Name" class="input input-bordered w-full">
+                </div>
+                <div>
+                    <label class="label">
+                        <span class="label-text">Last Name</span>
+                    </label>
+                    <input type="text" placeholder="Last Name" class="input input-bordered w-full">
+                </div>
+            </div>
+            <div class="email">
+                <p>Email Address</p>
+                <label class="input validator">
+                    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                            stroke="currentColor">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </g>
+                    </svg>
+                    <input type="email" placeholder="mail@site.com" required />
+                </label>
+                <div class="validator-hint hidden">Enter valid email address</div>
+            </div>
+            <div class="date">
+                <p>Date</p>
+                <input type="date" class="input" />
+            </div>
+            <div class="Time">
+                <p>Time</p>
+                <input type="time" class="input" />
+            </div>
+
+
+        </form>
+
+    </main>
+
 </body>
+
 </html>
